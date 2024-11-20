@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Mooli&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Mooli', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: white;
+  background-image: url("media/background-dark.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 94px);
+  gap: 5px;
+  background: #2f2f2f;
+  box-shadow: 20px 20px 60px #242424, -20px -20px 60px #3a3a3a;
+}
+
+.cell {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.cell:hover {
+  border: 2px solid red;
+}
+
+.message {
+  margin-bottom: 20px;
+}
+
+.reset-button {
+  margin-top: 20px;
+  width: 310px;
+  background-color: #383838;
+  color: rgb(255, 255, 255);
+  border: none;
+  height: 40px;
+  border: 2px solid #383838;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: 'Mooli', sans-serif;
+}
+
+.reset-button:hover {
+  color: red;
+} 
+
+.ptg-button:hover {
+  color: red;
+}
+
+.ptg-button {
+  margin-top: 10px;
+  width: 310px;
+  background-color: #383838;
+  color: rgb(255, 255, 255);
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #383838;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: 'Mooli', sans-serif;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer ul {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+
+footer li {
+  display: inline;
+}
+
+footer img {
+  width: 16px;
+  border-radius: 10px;
+  padding: 5px;
+  background: #272727;
+  box-shadow: 20px 20px 60px #242424, -20px -20px 60px #3a3a3a;
+  padding: 10px;
+}
+
+footer img:hover {
+  box-shadow: 0 0 15px white;
+  transition: 500ms;
+}
+
+footer a {
+  color: #242424;
+}
+
+footer p {
+  font-size: 14px;
+  text-align: center;
+}
